@@ -140,7 +140,7 @@ object Svg2Compose {
         return groupStack.pop().asParsingResult()
     }
 
-    private fun drawableTempDirectory() = createTempDir(suffix = "svg2compose/")
+    private fun drawableTempDirectory() = createTempDir(suffix = "svg2compose")
 
     private val String.withoutExtension get() = substringBeforeLast(".")
 }
